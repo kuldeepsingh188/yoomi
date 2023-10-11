@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.custam_container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.z-3000{
+    z-index: 890;
+}
+/* ---------- color ----------- */
+.bg_lightsky {
+    background: #F8FDFF;
+}
+
+.bg_gray {
+    background: rgba(175, 203, 213, 0.13);
+}
+
+.bg_black {
+    background-color: #000;
+}
+
+.color_black {
+    color: #000;
+}
+
+.color_white {
+    color: #fff;
+}
+
+.color_darkblue {
+    color: #076787;
+}
+
+.color_light_blue {
+    color: var(--Light-blue, #82B2C2);
+}
+
+.blueline {
+    background-color: #076787;
+    height: 24.87px;
+    position: absolute;
+    bottom: 40%;
+}
+
+.phul {
+    left: 5%;
+    bottom: -33px;
+}
+
+.phul_right {
+    right: 13%;
+    bottom: -33px;
+}
+
+/* --------------- navbar ------------ */
+.menu {
+    font-size: 38px;
+    font-family: sans-serif;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #076787;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar1 {
+    background-color: #C6DBE3;
+    position: fixed;
+    z-index: 229px !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    transition: all  200ms linear;
+    
+
+}
+
+.anychang{
+    transition: all  200ms linear;
+}
+
+.anychang:hover{
+color: #076787 !important;
+}
+
+.closbtn {
+    top: 20px;
+    right: 20px;
+}
+
+.get_start {
+    padding: 13px 16px;
+    border-radius: 4px;
+    background: var(--deep-blue, #076787);
+    border: 1px solid transparent;
+    transition: all 200ms linear;
+}
+
+.get_start:hover {
+    padding: 13px 16px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #076787;
+    color: #076787;
+}
+
+.logo {
+    width: 118.235px;
+    height: 30px;
+}
+
+/* ----------------- header -------------- */
+
+.next {
+    max-width: 850px;
+}
+
+.headerplus {
+    top: 20%;
+    left: 0;
+}
+
+.headerplusR {
+    top: 30%;
+    right: 0;
+}
+
+.email_box {
+    max-width: 428.892px;
+    height: 56.244px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(7, 103, 135, 0.15);
+}
+
+input {
+    border: none;
+    outline: none;
+    color: var(--black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.view_btn {
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: var(--deep-blue, #076787);
+    border: 1px solid transparent;
+    transition: all 200ms linear;
+}
+
+.view_btn:hover {
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #076787;
+    color: #076787;
+}
+
+.LINE_POSITION {
+    bottom: -116px;
+}
+
+.work {
+    position: absolute;
+    bottom: -332px;
+}
+
+/* ----------- liberay- ------------ */
+.library {
+    max-width: 460.03px;
+}
+
+.slick-prev:before {
+    content: '';
+    width: 34.608px;
+    height: 34.608px;
+    border-radius: 50px;
+    stroke-width: 0.877px;
+    stroke: #000;
+}
+
+.next:before,
+.slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------- tracking ---------- */
+.tracking {
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 0px 26px 27px 0px rgba(0, 0, 0, 0.04);
+}
+
+.yoga_practice {
+    border-radius: 4px;
+    background: #FFF;
+    width: fit-content;
+    box-shadow: 0px -0.92149px 17.50831px 0px rgba(0, 0, 0, );
+    background-size: center;
+}
+
+.yoga_tranee {
+    position: absolute;
+    top: -166px;
+    left: -15%;
+}
+
+.performance {
+    position: absolute;
+    top: -150px;
+    right: -5%;
+}
+
+.puls {
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+}
+
+.cn_plus {
+    position: absolute;
+    position: absolute;
+    top: -28%;
+    right: -11%;
+}
+
+.matrics_btn {
+    padding: 16px 20px;
+    border-radius: 4px;
+    background: var(--deep-blue, #076787);
+    border: 1px solid transparent;
+    transition: all 200ms linear;
+}
+
+.matrics_btn:hover {
+    padding: 16px 20px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #076787;
+    color: #076787;
+}
+
+.biling_left {
+    bottom: 0;
+    left: 0;
+}
+
+/* --------- through of plateform ------- */
+.pain {
+    border-radius: 4px;
+    background: var(--Grren, #85B6A6);
+}
+
+.satisfaction {
+    border-radius: 4px;
+    background: var(--Light-blue, #82B2C2);
+}
+
+.recovery {
+    border-radius: 4px;
+    background: var(--deep-blue, #076787);
+}
+
+.fifty_plus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hundred {
+    max-width: 231px;
+    height: 195px;
+}
+
+.first {
+    max-width: 343px;
+}
+
+.potient {
+    max-width: 1054px;
+}
+
+.cal_left {
+    bottom: 5%;
+    left: 0%;
+}
+
+.cal_right {
+    top: 0;
+    right: 5%;
+}
+
+/* ---------  the best ----------- */
+.zoom_hipa {
+    transition: all 200ms linear;
+}
+
+.zoom_hipa:hover {
+    scale: 1.1;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* ----------- ceo ---------- */
+.ceo {
+    max-width: 823px;
+    height: 384px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.466);
+}
+
+.joy {
+    width: 74.5px;
+    height: 74.5px;
+}
+
+.star {
+    width: 122.824px;
+    height: 20.361px;
+}
+
+.paragraph {
+    max-width: 504.393px;
+}
+
+.slider_plusR {
+    bottom: 0;
+    right: 0;
+}
+
+.slider_plus_l {
+    top: 0;
+    left: 0;
+}
+
+/* --------- yoomi --------- */
+
+.news_card {
+    border-radius: 32px;
+    background: var(--deep-blue, #076787);
+}
+
+.mines_margen {
+    transform: translatey(30%);
+}
+
+.yoomi {
+    width: 228px;
+    height: 55px;
+}
+
+.salesman {
+    width: 300px;
+    height: 321.804px;
+}
+
+.lalu {
+    bottom: 0;
+    right: 0;
+}
+
+
+/* ---------- footer ----------- */
+
+.footer_yoomi {
+    width: 192.118px;
+    height: 48.747px;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.footerplus {
+    bottom: 19%;
+    left: 0;
+}
+
+.footer_end {
+    background: rgba(255, 255, 255, 0.20);
+    height: 1px;
+}
+
+#button {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #076787;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#button::after {
+    content: "^";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 65px;
+    color: #076787;
+}
+
+#button:active {
+    background-color: #0F171F;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ----------pre ------------ */
+#bg_loader {
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(10deg, #FFF 21.38%, #E8F1FF 90.15%);
+    position: fixed;
+    z-index: 1200 !important;
+}
+
+.loader_imges {
+    animation: zoom-in 3s linear infinite;
+    max-width: 500px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.loder_width{
+    width: 250px;
+    height: 250px;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: translateX(0);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateX(0);
+        scale: 0.85;
+    }
+}
+
+
+@media (max-width:992px) {
+    .work {
+        position: absolute;
+        bottom: -186px;
+        z-index: 7;
+    }
+}
+
+@media (max-width:768px) {
+    .mines_margen {
+        transform: translatey(20%);
+    }
+
+    .potinal_12 {
+        height: 60px;
+    }
+
+    .work {
+        position: absolute;
+        bottom: -113px;
+    }
+
+    .LINE_POSITION {
+        bottom: -191px;
+    }
+}
+
+@media (max-width:576px) {
+    .work {
+        position: absolute;
+        bottom: 63px;
+    }
+
+    .LINE_POSITION {
+        bottom: -171px;
+    }
+
+    .get_start {
+        padding: 3px 13px;
+        border-radius: 4px;
+        background: var(--deep-blue, #076787);
+        border: 1px solid transparent;
+        transition: all 200ms linear;
+    }
+
+    .email_box {
+        width: 328.892px;
+        height: 56.244px;
+        border-radius: 4px;
+        background: #FFF;
+        box-shadow: 0px 4px 15px 0px rgba(7, 103, 135, 0.15);
+    }
+}

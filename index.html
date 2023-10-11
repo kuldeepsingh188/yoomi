@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <script src="./assets/js/style.js"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="overflow-hidd">
+
+    <section>
+        <div id="loader" class="overflow-hidden">
+            <div id="bg_loader" class="d-flex align-items-center justify-content-center">
+                <img class="loader_imges loder_width" src="./assets/image/webp/guldasta.webp" alt="">
+            </div>
+    </section>
+    <div class="position-sticky top-0 bg_lightsky start-0 py-5 z-3000">
+        <div class="custam_container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <img class="logo" src="./assets/image/png/yoomi-logo.png" alt="yoomi-logo">
+                </div>
+                <ul class="p-0 m-0 d-md-flex align-items-center d-none d-md-block ">
+                    <li class="ff_inter fw-medium fs_xmd color_black cursor_pointer anychang">About Us</li>
+                    <li class="ps-5 ff_inter fw-medium fs_xmd color_black cursor_pointer anychang">News</li>
+                    <li class="ps-5 me-1 ff_inter fw-medium fs_xmd color_black cursor_pointer anychang">Contact Us</li>
+                    <li class="get_start ms-4 ff_inter fw-medium fs_xmd color_white cursor_pointer anychang">Get Started
+                    </li>
+                </ul>
+                <button id="opennav" onclick="opennav()" class="menu d-md-none" type="button">&#9776</button>
+                <div id="menu" class="d-flex justify-content-center align-items-center navbar1">
+                    <button onclick="closenav()" type="button"
+                        class="menu d-md-none position-absolute closbtn">&times;</button>
+                    <ul class="p-0 m-0 d-md-flex flex-column text text-center gap-3 d-block d-md-none">
+                        <li onclick="closenav()" class="ff_inter fw-medium fs_xmd color_black">About Us</li>
+                        <li onclick="closenav()" class="ff_inter fw-medium fs_xmd color_black pt-3">News</li>
+                        <li onclick="closenav()" class="ff_inter fw-medium fs_xmd color_black pt-3">Contact Us</li>
+                        <li onclick="closenav()" class="ff_inter fw-medium fs_xmd color_black pt-3">Get Started</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg_lightsky  position-relative">
+        <img class="position-absolute headerplus d-none d-md-block" src="./assets/image/png/leftblock.png"
+            alt="leftblock">
+        <img class="position-absolute headerplusR d-none d-md-block" src="./assets/image/png/rightblock.png"
+            alt="rightblock">
+            <!-- ----------- header ----------- -->
+        <div class="custam_container">
+          
+            <div class="text-center pt-5">
+                <h1 class="pt-3 m-0 ff_jakarta fw-bold fs_5xl color_black next m-auto"><span class="fw-bolder">Next
+                        Generation</span> <span class="fw-normal">Patient Engagement</span> and RTM Solution <span
+                        class="fw-semibold">✨</span></h1>
+                <p class="pt-2 pb-5 ff_inter fw-normal fs_xlg color_black opacity-75">Industry leading AI
+                    motion-tracking technology</p>
+            </div>
+            <div class="email_box d-flex justify-content-between m-auto mb-5 w-100">
+                <input class="ps-3" type="email" placeholder="Enter Your Email">
+                <button class="get_start my-1 me-1 ff_inter fw-semibold fs_md color_white">Get Started</button>
+            </div>
+        </div>
+        <div class="blueline w-100 mt-5 position-relative LINE_POSITION">
+            <img class="position-absolute phul" src="./assets/image/png/guldasta.png" alt="fhul">
+            <img class="phul_right position-absolute" src="./assets/image/png/guldasta.png" alt="phul">
+        </div>
+    </section>
+
+    <!-- -------------- chat--------  -->
+
+    <section class="mt-5 pt-5">
+        <div class="custam_container pt-5 mt-5">
+            <div class="d-flex justify-content-center mt-5">
+                <img class="w-100" src="./assets/image/png/somechate.png" alt="chat with someone">
+            </div>
+        </div>
+    </section>
+
+    <!-- library -->
+    <section class="mb-5 position-relative">
+        <img class="puls" src="./assets/image/png/plus.png" alt="plus">
+        <div class="custam_container  position-relative z-1">
+            <div class="text-center">
+                <h4 class="ff_inter fw-medium fs_md color_darkblue m-0 text-uppercase pt-sm-5 mt-sm-5">Features</h4>
+                <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Explore Our <span
+                        class="fw-semibold">Amazing Features</span>
+                </p>
+                <p class="ff_inter fw-normal fs_md">Yoomi is more than just a regular remote monitoring solution. Our
+                    product supports patients <span class="d-block">and providers through every
+                        step of the rehabilitation process</span></p>
+            </div>
+            <div class="row align-items-center py-sm-5 mt-5 tracking">
+                <div class="col-lg-6">
+                    <h4 class="ff_inter fw-medium fs_md color_darkblue m-0">Library</h4>
+                    <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Extensive Exercise <span
+                            class="fw-semibold">Library</span></p>
+                    <div class="d-flex align-items-center pt-4">
+                        <img src="./assets/image/svg/checkbox.svg" alt="checkbox">
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3">Utilize Yoomi’s HEP
+                            templates to
+                            quickly create and assign programs to your patients</p>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <span><img src="./assets/image/svg/checkbox.svg" alt="checkbox"></span>
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3">Choose from our library of
+                            exercises
+                            for all patient cases</p>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <img src="./assets/image/svg/checkbox.svg" alt="checkbox">
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3 pb-2">Use Yoomi’s
+                            industry-leading exercise
+                            generation tool to create your own exercises that track adherence and form in
+                            seconds</p>
+                    </div>
+                    <button class="view_btn ff_inter fw-semibold fs_md color_white m-0 mt-4">View the Library</button>
+                </div>
+                <div class="col-lg-6 pt-lg-0 pt-5">
+                    <!-- <span><img class="w-100" src="./assets/image/png/traniee.png" alt="traniee"></span> -->
+                    <div class="excersize">
+                        <div><img class="w-100 library" src="./assets/image/png/traniee.png" alt="traniee"></div>
+                        <div><img class="w-100 library" src="./assets/image/png/traniee.png" alt="traniee"></div>
+                        <div><img class="w-100 library" src="./assets/image/png/traniee.png" alt="traniee"></div>
+                        <div><img class="w-100 library" src="./assets/image/png/traniee.png" alt="traniee"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="mt-5">
+        <div class="custam_container tracking position-relative z-3">
+            <!-- <img class="cn_plus" src="./assets/image/png/plus.png" alt="plus"> -->
+            <div class="row align-items-center py-5">
+                <div class="col-md-6">
+                    <div class="yoga_practice ms-sm-5">
+                        <span class="position-relative"><img class="w-100" src="./assets/image/png/yoga_style.png"
+                                alt="yoga style">
+                            <img class="yoga_tranee d-none d-sm-block" src="./assets/image/png/yoga_tranee.png"
+                                alt="yoga tranee">
+                            <img class="performance d-none d-sm-block" src="./assets/image/png/performance.png"
+                                alt="performance">
+                        </span>
+                        <div class="d-flex justify-content-between align-items-center py-3">
+                            <div class="d-flex align-items-center">
+                                <p class="ff_inter fw-medium fs_xsm color_black m-0 ps-3">Prone w/ Scapular Retraction
+                                </p>
+                                <p class="ff_inter fw-medium fs_xsm color_black m-0 ps-3">Sets</p>
+                                <p class="ff_inter fw-medium fs_xsm color_black m-0 ps-2"><span
+                                        class="ff_inter fs_md color_darkblue">2</span>/3</p>
+                                <p class="ff_inter fw-medium fs_xsm color_black m-0 ps-3">Reps</p>
+                                <p class="ff_inter fw-medium fs_xsm color_black m-0 ps-2"><span
+                                        class="ff_inter fs_md color_darkblue">2</span>/12</p>
+                            </div>
+                            <div>
+                                <p class="m-0 pe-3 pb-1"><img src="./assets/image/png/iconmenu.png" alt="iconmenu"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-5">
+                    <h4 class="ff_inter fw-medium fs_md color_darkblue m-0">TRACKING</h4>
+                    <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Cutting Edge Motion <span
+                            class="fw-semibold">Tracking/Feedback </span></p>
+                    <div class="d-flex align-items-center pt-4">
+                        <img src="./assets/image/svg/checkbox.svg" alt="checkbox">
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3">Provides a holistic,
+                            real-time analysis of patient exercise form, capturing 300+ data points and critical
+                            metrics.</p>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <span><img src="./assets/image/svg/checkbox.svg" alt="checkbox"></span>
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3">Delivers immediate feedback
+                            and guidance to correct and improve exercise form</p>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <img src="./assets/image/svg/checkbox.svg" alt="checkbox">
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3 pb-2">Supported by the most
+                            accurate motion-tracking model designed for rehabilitation, Yoomi Vision</p>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <img src="./assets/image/svg/checkbox.svg" alt="checkbox">
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 ps-3 pb-2">Requires no custom
+                            hardware, sensors, or equipment</p>
+                    </div>
+                    <button class="view_btn ff_inter fw-semibold fs_md color_white m-0 mt-4">Test it Yourself</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="custam_container tracking my-5">
+            <div class="row align-items-center">
+                <div class="col-md-5 ps-4">
+                    <h4 class="ff_inter fw-medium fs_md color_darkblue m-0">REPORT</h4>
+                    <P class="ff_jakarta fw-normal fs_2xl color_black m-0 pt-2">Reporting + <span
+                            class="fw-semibold">Analytics</span></P>
+                    <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 pt-3 mt-1 mb-3">Track patient progress
+                        over time with
+                        compliance, pain, RPE, ROM and other key metrics</p>
+                    <button class="matrics_btn ff_inter fw-semibold fs_md color_white mt-4">View the Matrics</button>
+                </div>
+                <div class="col-md-7">
+                    <span><img class="my-5 w-100" src="./assets/image/png/motaionrange.png"
+                            alt="range of motain"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------- biling ---------- -->
+    <section>
+        <div class="custam_container tracking my-5 position-relative">
+            <img class="biling_left position-absolute" src="./assets/image/png/bilingleft.png" alt="biling">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span><img class="my-5 w-100" src="./assets/image/png/jone_doe.png" alt="jone dow"></span>
+                </div>
+                <div class="col-md-6 ps-4">
+                    <h4 class="ff_inter fw-medium fs_md color_darkblue m-0">TRACKING</h4>
+                    <P class="ff_jakarta fw-normal fs_2xl color_black m-0 pt-2">Remote Therapeutic <span
+                            class="fw-semibold">Monitoring + Billing</span></P>
+                    <p class="ff_inter fw-normal fs_md color_black opacity-75 m-0 pt-3 mt-1 mb-3">Enhance patient care
+                        with remote monitoring, and enable providers to generate over $160 per patient per month in
+                        additional revenue</p>
+                    <button class="matrics_btn ff_inter fw-semibold fs_md color_white mt-4">Check Out the Demo</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!---- through of plateform ----->
+
+    <section class="bg_gray position-relative">
+        <img class="cal_left position-absolute d-none d-md-block" src="./assets/image/png/calcuteplusl.png" alt="left">
+        <div class="custam_container">
+            <div class="text-center pt-5">
+                <p class="ff_inter fw-medium fs_md color_darkblue m-0 pt-4">PLATEFORM</p>
+                <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Through<span class="fw-semibold"> Our
+                        Platform</span></p>
+                <p class="ff_inter fw-normal fs_md color_black m-0 pt-3 opacity-75">We’ve helped out partners and
+                    patients achieve</span></p>
+            </div>
+            <div class="row justify-content-center py-md-5 mt-3 mb-md-4">
+                <div class="col-lg-3 col-sm-4 col-7">
+                    <div class="pain text-center py-4 h-100 position-relative">
+                        <span class="fifty_plus"><img src="./assets/image/png/fiftyplus.png" alt="fifty plus"></span>
+                        <p class="ff_inter fw-semibold fs_5xl color_white m-0 mt-3">50%</p>
+                        <p class="ff_inter fw-normal fs_lg color_white opacity-75 mb-3">Reduction in <span
+                                class="d-block">Pain</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-7 mt-sm-0 mt-4 position-relative">
+                    <div class="satisfaction text-center py-4 h-100">
+                        <span class="fifty_plus"><img src="./assets/image/png/fiftyplus.png" alt="fifty plus"></span>
+                        <p class="ff_inter fw-semibold fs_5xl color_white m-0 mt-3">90%</p>
+                        <p class="ff_inter fw-normal fs_lg color_white opacity-75 mb-3">Increase In-Patient<span
+                                class="d-block">Satisfaction</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-7 mt-sm-0 mt-4">
+                    <div class="recovery text-center py-4 h-100 position-relative">
+                        <span class="fifty_plus"><img src="./assets/image/png/fiftyplus.png" alt="fifty plus"></span>
+                        <p class="ff_inter fw-semibold fs_5xl color_white m-0 mt-3">60%</p>
+                        <p class="ff_inter fw-normal fs_lg color_white opacity-75 mb-3">Faster Recovery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5 mt-5">
+                <h4 class="ff_inter fw-medium fs_md color_darkblue m-0 text-uppercase">Forecast your profits</h4>
+                <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Calculate Your <span class="fw-semibold">
+                        Reimbursement <span class="d-block">With Yoomi</span></span></p>
+            </div>
+            <div class="d-md-flex justify-content-around flex-wrap pt-5 mt-md-4">
+                <div>
+                    <img class="hundred w-100" src="./assets/image/png/totoal100.png" alt="100">
+                </div>
+
+                <div class=" d-md-flex justify-content-between flex-column">
+                    <div>
+                        <img class="first w-100 pt-4 pt-md-0" src="./assets/image/png/initoal.png" alt="initiAL">
+                    </div>
+                    <div>
+                        <img class="first w-100 pt-4 pt-md-0" src="./assets/image/png/patiet.png" alt="first">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between flex-column">
+                    <div>
+                        <img class="first w-100 d-none d-lg-block" src="./assets/image/png/first.png" alt="initiAL">
+                    </div>
+                    <div>
+                        <img class="first w-100 d-none d-lg-block" src="./assets/image/png/additional.png" alt="first">
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <div class="d-md-flex justify-content-md-between aliic pb-4">
+                        <div>
+                            <img class="first w-100 d-lg-none" src="./assets/image/png/first.png" alt="initiAL">
+                        </div>
+                        <div>
+                            <img class="first w-100 d-lg-none pt-4 pt-md-0" src="./assets/image/png/additional.png"
+                                alt="first">
+                        </div>
+                    </div>
+                    <img class="potient w-100 potinal_12 pb-4 mb-3" src="./assets/image/png/potental.png"
+                        alt="potintal">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----- Partners -->
+    <section>
+        <div class="custam_container">
+            <div class="text-center pt-5 mt-5">
+                <h4 class="ff_inter fw-medium fs_md color_darkblue m-0 text-uppercase">Partners</h4>
+                <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Recognized by Leading<span
+                        class="fw-semibold">
+                        Healthcare<span class="d-block">Institutions</span></span></p>
+                <div class="row overflow-hidden py-4 py-md-5 mt-md-2 mb-md-3">
+                    <div class="Rwjslider">
+                        <span><img src="./assets/image/png/nih.png" alt="nih"></span>
+                        <span><img src="./assets/image/png/cAROL.png" alt="carol"></span>
+                        <span><img src="./assets/image/png/rwj.png" alt="rwj"></span>
+                        <span><img src="./assets/image/png/faf.png" alt="faf"></span>
+                        <span><img src="./assets/image/png/foundation.png" alt="foudation"></span>
+                        <span><img src="./assets/image/png/nih.png" alt="nih"></span>
+                        <span><img src="./assets/image/png/cAROL.png" alt="carol"></span>
+                        <span><img src="./assets/image/png/rwj.png" alt="rwj"></span>
+                        <span><img src="./assets/image/png/faf.png" alt="faf"></span>
+                        <span><img src="./assets/image/png/foundation.png" alt="foudation"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------- know more------ -->
+    <section>
+        <div class="custam_container py-md-5">
+            <div class="text-center py-5">
+                <h4 class="ff_inter fw-medium fs_md color_darkblue m-0 text-uppercase">Know More</h4>
+                <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">And Used by the Biggest<span
+                        class="fw-semibold">
+                        Figures<span class="d-block">in Sports and Rehab</span></span></p>
+            </div>
+
+            <div class="d-flex justify-content-center pt-3">
+                <div id="London" class="tabcontent">
+                    <img class="w-100" src="./assets/image/png/tabshow1.png" alt="tab">
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <img class="w-100" src="./assets/image/png/tabshow2.png" alt="tab">
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <img class="w-100" src="./assets/image/png/tabshow3.png" alt="tab">
+                </div>
+
+                <div id="Oslo" class="tabcontent">
+                    <img class="w-100" src="./assets/image/png/tabshow4.png" alt="tab">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 pt-5 ">
+                <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen"><img class="w-100"
+                        src="./assets/image/png/tab1.png" alt="tab"></button>
+                <button class="tablink" onclick="openCity('Paris', this, 'green')"><img class="w-100"
+                        src="./assets/image/png/tab2.png" alt="tab"></button>
+                <button class="tablink" onclick="openCity('Tokyo', this, 'blue')"><img class="w-100"
+                        src="./assets/image/png/tab3.png" alt="tab"></button>
+                <button class="tablink" onclick="openCity('Oslo', this, 'orange')"><img class="w-100"
+                        src="./assets/image/png/tab4.png" alt=""></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- .---------- the best----  -->
+    <section>
+        <div class="custam_container py-md-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="py-5">
+                        <h4 class="ff_inter fw-medium fs_md color_darkblue m-0 text-uppercase">The Best for you</h4>
+                        <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">Committed to Industry-Standard<span
+                                class="fw-semibold">
+                                Compliance<span class="d-block">and Safety</span></span></p>
+                        <p class="ff_inter fw-normal fs_md color_black opacity-75 pt-3 m-0">Yoomi has signed the
+                            American
+                            Physical Therapy
+                            Association Digital Transparency pledge, illustrating
+                            our commitment to
+                            the fact that digital "physical therapy" services are only performed or directed by licensed
+                            physical therapists in
+                            accordance with all regulations and APTA’s Standards of Practice for Physical Therapy.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-sm-flex gap-5 align-items-center justify-content-md-end">
+                        <div class="flex-md-column gap-5 d-sm-flex mx-sm-0 mx-5">
+                            <div class="m-0"><img class="w-100 zoom_hipa" src="./assets/image/png/hippa.png" alt="hipa">
+                            </div>
+                            <div class="pt-4 pt-sm-0"><img class="w-100 zoom_hipa" src="./assets/image/png/hippa.png"
+                                    alt="hipa">
+                            </div>
+                        </div>
+                        <div class="mx-sm-0 mx-5 pt-4 pt-sm-0"><img class="w-100 zoom_hipa"
+                                src="./assets/image/png/apta.png" alt="apta"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------client review------- -->
+    <section class="position-relative">
+        <img class="position-absolute slider_plus_l" src="./assets/image/png/sliderplusL.png" alt="sliderplusL">
+        <img class="position-absolute slider_plusR" src="./assets/image/png/sliderplusR.png" alt="sliderplusR">
+        <div class="custam_container">
+            <div class="text-center pt-5 mt-5">
+                <h4 class="ff_inter fw-medium fs_md color_darkblue m-0 text-uppercase">CLIENT review</h4>
+                <p class="ff_jakarta fw-normal fs_3xl color_black m-0 pt-2">What are Client Think<span
+                        class="fw-semibold">
+                        About Us</span></p>
+            </div>
+            <div class="ceo m-auto text-center d-flex flex-column justify-content-center mt-5">
+                <div class="row overflow-hidden py-3 py-sm-4 py-md-5">
+                    <div class="myslider_1">
+                        <div class="m-0  d-flex flex-column align-items-center">
+                            <span><img class="joy" src="./assets/image/png/joy-ROBERT.png" alt="joy robert"></span>
+                            <p class="ff_inter fw-medium fs_lg color_black m-0 pt-2">Joy Robert <span class="fs_sm">(
+                                    USA
+                                    )</span>
+                            </p>
+                            <p class="ff_inter fw-medium fs_sm color_light_blue m-0 pt-2">CEO ( yoomi )</p>
+                            <p
+                                class="ff_inter fw-normal fs_md color_black m-0 pt-2 paragraph m-auto position-relative comma text-center">
+                                I'm a paragraph. Click here to
+                                add
+                                your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                                add your own content and make changes to the font.</p>
+                            <span><img class="star mt-3" src="./assets/image/png/stare.png" alt="star"></span>
+                        </div>
+                        <div class="m-0  d-flex flex-column align-items-center">
+                            <span><img class="joy" src="./assets/image/png/joy-ROBERT.png" alt="joy robert"></span>
+                            <p class="ff_inter fw-medium fs_lg color_black m-0 pt-2">Joy Robert <span class="fs_sm">(
+                                    USA
+                                    )</span>
+                            </p>
+                            <p class="ff_inter fw-medium fs_sm color_light_blue m-0 pt-2">CEO ( yoomi )</p>
+                            <p
+                                class="ff_inter fw-normal fs_md color_black m-0 pt-2 paragraph m-auto position-relative comma text-center">
+                                I'm a paragraph. Click here to
+                                add
+                                your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                                add your own content and make changes to the font.</p>
+                            <span><img class="star mt-3" src="./assets/image/png/stare.png" alt="star"></span>
+                        </div>
+                        <div class="m-0  d-flex flex-column align-items-center">
+                            <span><img class="joy" src="./assets/image/png/joy-ROBERT.png" alt="joy robert"></span>
+                            <p class="ff_inter fw-medium fs_lg color_black m-0 pt-2">Joy Robert <span class="fs_sm">(
+                                    USA
+                                    )</span>
+                            </p>
+                            <p class="ff_inter fw-medium fs_sm color_light_blue m-0 pt-2">CEO ( yoomi )</p>
+                            <p
+                                class="ff_inter fw-normal fs_md color_black m-0 pt-2 paragraph m-auto position-relative comma text-center">
+                                I'm a paragraph. Click here to
+                                add
+                                your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                                add your own content and make changes to the font.</p>
+                            <span><img class="star mt-3" src="./assets/image/png/stare.png" alt="star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!------------- sineup ------------ -->
+    <section>
+        <div class="custam_container position-relative z-3">
+            <div class="news_card mines_margen">
+                <span><img class="position-absolute lalu" src="./assets/image/png/laluplus.png" alt=""></span>
+                <div class="row align-items-center">
+                    <div class="col-md-6 ps-sm-5">
+                        <span class="ps-3"><img class="yoomi mt-md-0 mt-4" src="./assets/image/png/yoomitm.png"
+                                alt="yoomi"></span>
+                        <p class="ff_jakarta fw-normal fs_xl color_white ps-3 pt-4 mt-1">Sign Up to Join <span
+                                class="fw-semibold">Our
+                                Newsletter</span></p>
+                        <div class="email_box d-flex justify-content-between mt-5 ms-3 w-100">
+                            <input class="ps-3" type="email" placeholder="Enter Your Email">
+                            <button class="get_start my-1 me-1 ff_inter fw-semibold fs_md color_white">Get
+                                Started</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center"><img class="salesman pt-4 mt-3 pb-3 mb-1"
+                                src="./assets/image/png/alesman.png" alt="salesman"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------ footer ------ -->
+    <section class="bg_black position-relative pt-5">
+        <span><img class="position-absolute footerplus" src="./assets/image/png/footerplus.png" alt="footerplus"></span>
+        <div class="custam_container pb-5">
+            <div class="row justify-content-md-between pt-5">
+                <div class="col-md-3 col-sm-5 pt-sm-5 mt-5">
+                    <img class="footer_yoomi" src="./assets/image/png/foooter_yoomi.png" alt="yommi">
+                    <p class="ff_inter fw-light fs_sm color_white opacity-75 py-4 my-2 m-0">I'm a paragraph. Click here
+                        to add your <span class="d-md-block">own text and edit me. It’s easy. Just click</span> “Edit
+                        Text”
+                    </p>
+                    <div class="d-flex">
+                        <span><img src="./assets/image/svg/message.svg" alt="message"></span>
+                        <p class="ff_inter fw-light fs_md color_white opacity-75 ps-3 m-0">contact@yoomi.com</p>
+                    </div>
+                    <div class="d-flex pt-3">
+                        <span><img src="./assets/image/svg/mobile.svg" alt="mobile"></span>
+                        <p class="ff_inter fw-light fs_md color_white opacity-75 ps-3 m-0">+123 456 789</p>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-sm-6 mt-sm-5 pt-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <ul class="p-0">
+                                <li class="ff_inter fw-semibold fs_sm color_white">About Us</li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">Meet the
+                                    Team</li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">Our
+                                    Mission</li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">Our
+                                    Vision</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="p-0">
+                                <li class="ff_inter fw-semibold fs_sm color_white">Contact Us</li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">Twitter
+                                </li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">
+                                    Instagram</li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">Linkedin
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="p-0">
+                                <li class="ff_inter fw-semibold fs_sm color_white">News</li>
+                                <li class="ff_inter fw-normal fs_sm color_white opacity-75 cursor_pointer pt-3">Recent
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer_end mt-5"></div>
+        <div class="custam_container">
+            <ul class="d-flex gap-4 justify-content-end py-4">
+                <li class="ff_inter fw-normal fs_sm color_white opacity-75">Terms of Service</li>
+                <li class="ff_inter fw-normal fs_sm color_white opacity-75">Privacy Policy</li>
+                <li class="ff_inter fw-normal fs_sm color_white opacity-75">Cookies</li>
+            </ul>
+        </div>
+    </section>
+
+    <a id="button"></a>
+
+    <script>
+        function openCity(cityName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+        $('.myslider_1').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1340,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+
+        $('.Rwjslider').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 3000,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1340,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        $('.excersize').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 3000,
+            slidesToShow: 1.04,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1340,
+                    settings: {
+                        slidesToShow: 1.02,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1.6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+    </script>
+
+    <script>
+        setTimeout(() => {
+            const loader = document.getElementById("loader");
+
+            loader.style.display = "none";
+
+            document.body.classList.remove("overflow-hidden");
+        }, 3000);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        function opennav() {
+            document.getElementById("menu").style.left = "0%";
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
+
+        }
+        function closenav() {
+            document.getElementById("menu").style.left = "-100%";
+            document.getElementsByTagName("body")[0].style.overflow = "scroll";
+        }
+    </script>
+</body>
+
+</html>
